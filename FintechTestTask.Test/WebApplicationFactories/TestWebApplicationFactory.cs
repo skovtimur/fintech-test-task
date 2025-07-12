@@ -58,7 +58,7 @@ public class TestWebApplicationFactory(bool disableAuth = false) : WebApplicatio
 
         var refreshTokens = users
             .Select(user => RefreshTokenEntity.Create(user,
-                $"tokenHash-{user.Id}", DateTime.Now.AddDays(7))).ToList();
+                $"tokenHash-{user.Id}", DateTime.UtcNow.AddDays(7))).ToList();
 
         var games = new List<GameEntity>()
         {

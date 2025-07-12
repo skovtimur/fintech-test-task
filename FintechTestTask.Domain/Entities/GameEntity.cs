@@ -75,7 +75,7 @@ public class GameEntity : BaseEntity
 
     public void Finish()
     {
-        FinishedAt = DateTime.Now;
+        FinishedAt = DateTime.UtcNow;
         IsFinished = true;
     }
 

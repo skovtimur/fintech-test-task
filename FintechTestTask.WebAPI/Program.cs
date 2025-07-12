@@ -136,16 +136,18 @@ public class Program
         app.UseAuthorization();
 
 
-        app.ApplyMigration();
-        //for the efcore use migrations in a docker container, without this postgres will be without changed tables
-        //https://youtube.com/watch?v=WQFx2m5Ub9M
-
-
-        app.UseHealthChecks("/health", new HealthCheckOptions()
+        if (builder.Environment.IsEnvironment("Testing") == false)
         {
-            ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
-        });
-        app.MapHealthChecksUI(options => { options.UIPath = "/health-ui"; });
+            app.ApplyMigration();
+            //for the efcore use migrations in a docker container, without this postgres will be without changed tables
+            //https://youtube.com/watch?v=WQFx2m5Ub9M
+            
+            app.UseHealthChecks("/health", new HealthCheckOptions()
+            {
+                ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+            });
+            app.MapHealthChecksUI(options => { options.UIPath = "/health-ui"; });
+        }
         app.MapControllers();
 
         app.Run();

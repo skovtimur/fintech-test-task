@@ -1,21 +1,21 @@
 using System.Net;
 using System.Net.Http.Json;
 using FintechTestTask.Domain.Dtos;
-using FintechTestTask.Infrastructure;
 using FintechTestTask.Test.WebApplicationFactories;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace FintechTestTask.Test.ControllerTests;
 
-public class TicTacToeControllerTest
+public class TicTacToeControllerTests
 {
     private readonly TestWebApplicationFactory factory = new(disableAuth: true);
 
     [Fact]
     public async Task Get_Games_Test_Should_Be_Ok_And_Returns_Game()
     {
-        // Act
+        // Arrange
         var httpClient = factory.CreateClient();
+        
+        // Act
         var responseOfAvailableGames = await httpClient.GetAsync($"/tic-tac-toe");
 
         // Assert
@@ -31,14 +31,6 @@ public class TicTacToeControllerTest
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
             Assert.NotNull(game);
         }
-    }
-
-    public async Task Create_Game_Test_Should_Be_Created()
-    {
-        using var scope = factory.Services.CreateScope();
-
-        var scopedServices = scope.ServiceProvider;
-        var dbContext = scopedServices.GetRequiredService<MainDbContext>();
     }
 }
 

@@ -7,7 +7,6 @@ using FintechTestTask.Application.Services;
 using FintechTestTask.Domain.Entities;
 using FintechTestTask.Infrastructure.Services;
 using Microsoft.AspNetCore.TestHost;
-using server_app.Application.Abstractions.Hashing;
 
 namespace FintechTestTask.WebAPI.Extensions;
 

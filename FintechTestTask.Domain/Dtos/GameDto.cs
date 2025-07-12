@@ -14,7 +14,7 @@ public class GameDto
     public Guid? CircleUserId { get; set; }
     public Guid? CrossUserId { get; set; }
 
-    public bool HasADraw { get; set; } = false;
+    public bool IsItDraw { get; set; } = false;
     public bool IsFinished { get; set; } = false;
     public string? FinishedAt { get; set; } = null;
 }

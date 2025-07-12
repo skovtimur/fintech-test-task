@@ -10,3 +10,4 @@
 /home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Domain/obj/Debug/net9.0/refint/FintechTestTask.Domain.dll
 /home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Domain/obj/Debug/net9.0/FintechTestTask.Domain.pdb
 /home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Domain/obj/Debug/net9.0/ref/FintechTestTask.Domain.dll
+/home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Domain/obj/Debug/net9.0/FintechTestTask.Domain.sourcelink.json

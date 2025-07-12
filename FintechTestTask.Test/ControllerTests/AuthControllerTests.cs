@@ -1,21 +1,25 @@
 using System.Net;
-using System.Net.Http.Json;
 using FintechTestTask.Domain.Dtos;
+using FintechTestTask.Domain.Models;
 using FintechTestTask.Test.WebApplicationFactories;
 using FintechTestTask.WebAPI.Queries;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using RandomString4Net;
 
 namespace FintechTestTask.Test.ControllerTests;
 
-public class AuthControllerTest
+public class AuthControllerTests
 {
     private readonly TestWebApplicationFactory factory = new();
-    
+
     [Theory]
     [MemberData(nameof(GetData))]
     public async Task Create_New_Account_Test_Should_Be_Ok_And_Returns_Tokens(string randomName, string randomPassword)
     {
         //Arrange
+        var logger = factory.Services.GetRequiredService<ILogger<AuthControllerTests>>();
         var httpClient = factory.CreateClient();
 
         var formContent = new FormUrlEncodedContent([
@@ -30,11 +34,14 @@ public class AuthControllerTest
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
         Assert.Equal("application/json", response.Content.Headers.ContentType?.MediaType);
 
-        var tokens = await response.Content.ReadFromJsonAsync<JwtTokensDto>();
+        var json = await response.Content.ReadAsStringAsync();
+        var tokens = JsonConvert.DeserializeObject<JwtTokens>(json);
 
+        logger.LogCritical(json);
         Assert.NotNull(tokens);
-        Assert.False(string.IsNullOrWhiteSpace(tokens.AccessToken));
-        Assert.False(string.IsNullOrWhiteSpace(tokens.RefreshToken));
+        Assert.False(string.IsNullOrEmpty(tokens.AccessToken));
+        Assert.False(string.IsNullOrEmpty(tokens.RefreshToken));
+        Assert.True(tokens.ExpiresAtUtc > DateTime.UtcNow);
     }
 
     [Fact]
@@ -42,7 +49,7 @@ public class AuthControllerTest
     {
         //Arrange
         var httpClient = factory.CreateClient();
-        
+
         var formContent = new FormUrlEncodedContent([
             new KeyValuePair<string, string>(nameof(CreateAccountQuery.Name).ToLower(), string.Empty),
             new KeyValuePair<string, string?>(nameof(CreateAccountQuery.Password).ToLower(), null)

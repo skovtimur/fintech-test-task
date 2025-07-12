@@ -1,7 +1,6 @@
 using System.Security.Cryptography;
 using System.Text;
 using FintechTestTask.Application.Abstractions.Hashing;
-using server_app.Application.Abstractions.Hashing;
 
 namespace FintechTestTask.Application.Services;
 

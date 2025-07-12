@@ -291,3 +291,4 @@
 /home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Infrastructure/obj/Debug/net9.0/FintechTestTask.Infrastructure.pdb
 /home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Infrastructure/obj/Debug/net9.0/FintechTestTask.Infrastructure.genruntimeconfig.cache
 /home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Infrastructure/obj/Debug/net9.0/ref/FintechTestTask.Infrastructure.dll
+/home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Infrastructure/obj/Debug/net9.0/FintechTestTask.Infrastructure.sourcelink.json

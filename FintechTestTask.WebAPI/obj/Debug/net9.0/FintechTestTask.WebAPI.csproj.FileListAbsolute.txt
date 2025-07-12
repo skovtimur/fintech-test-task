@@ -463,3 +463,4 @@
 /home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.WebAPI/bin/Debug/net9.0/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
 /home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.WebAPI/bin/Debug/net9.0/System.Diagnostics.DiagnosticSource.dll
 /home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.WebAPI/bin/Debug/net9.0/YamlDotNet.dll
+/home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.WebAPI/obj/Debug/net9.0/FintechTestTask.WebAPI.sourcelink.json

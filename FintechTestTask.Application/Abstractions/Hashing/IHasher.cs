@@ -1,4 +1,4 @@
-namespace server_app.Application.Abstractions.Hashing;
+namespace FintechTestTask.Application.Abstractions.Hashing;
 
 public interface IHashVerify
 {
