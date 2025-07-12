@@ -36,7 +36,8 @@ bld/
 
 
 #JetBrains Rider
-.idea/
+.idea/*
+.idea
 
 # Build results on 'Bin' directories
 **/[Bb]in/*
