@@ -37,7 +37,6 @@ public class AuthControllerTests
         var json = await response.Content.ReadAsStringAsync();
         var tokens = JsonConvert.DeserializeObject<JwtTokens>(json);
 
-        logger.LogCritical(json);
         Assert.NotNull(tokens);
         Assert.False(string.IsNullOrEmpty(tokens.AccessToken));
         Assert.False(string.IsNullOrEmpty(tokens.RefreshToken));

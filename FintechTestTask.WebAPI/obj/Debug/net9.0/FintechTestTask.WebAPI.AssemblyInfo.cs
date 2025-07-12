@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FintechTestTask.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8716fdd4d57f6ce63a12661444b2ed5ea7998025")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b1c3b0c278c7675a58abe2f3e992d21d753352a")]
 [assembly: System.Reflection.AssemblyProductAttribute("FintechTestTask.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FintechTestTask.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
