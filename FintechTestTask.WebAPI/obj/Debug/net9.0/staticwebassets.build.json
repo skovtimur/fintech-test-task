@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "xw0ecLb7Kuip4fz7kzN8FNByTeGJEsll8BRGLFrTnE8=",
+  "Source": "FintechTestTask.WebAPI",
+  "BasePath": "_content/FintechTestTask.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

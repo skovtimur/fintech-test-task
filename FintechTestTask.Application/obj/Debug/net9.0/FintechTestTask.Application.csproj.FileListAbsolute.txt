@@ -1,0 +1,15 @@
+/home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Application/bin/Debug/net9.0/FintechTestTask.Application.deps.json
+/home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Application/bin/Debug/net9.0/FintechTestTask.Application.dll
+/home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Application/bin/Debug/net9.0/FintechTestTask.Application.pdb
+/home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Application/bin/Debug/net9.0/FintechTestTask.Domain.dll
+/home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Application/bin/Debug/net9.0/FintechTestTask.Domain.pdb
+/home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Application/obj/Debug/net9.0/FintechTestTask.Application.csproj.AssemblyReference.cache
+/home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Application/obj/Debug/net9.0/FintechTestTask.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Application/obj/Debug/net9.0/FintechTestTask.Application.AssemblyInfoInputs.cache
+/home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Application/obj/Debug/net9.0/FintechTestTask.Application.AssemblyInfo.cs
+/home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Application/obj/Debug/net9.0/FintechTestTask.Application.csproj.CoreCompileInputs.cache
+/home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Application/obj/Debug/net9.0/FintechT.3AF2C560.Up2Date
+/home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Application/obj/Debug/net9.0/FintechTestTask.Application.dll
+/home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Application/obj/Debug/net9.0/refint/FintechTestTask.Application.dll
+/home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Application/obj/Debug/net9.0/FintechTestTask.Application.pdb
+/home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Application/obj/Debug/net9.0/ref/FintechTestTask.Application.dll

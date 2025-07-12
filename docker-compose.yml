@@ -1,0 +1,50 @@
+networks:
+  dev:
+    driver: bridge
+
+services:
+  #Web API application
+  server_app:
+    container_name: server-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - redis
+      - postgres
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+    networks:
+      - dev
+  
+  # Redis
+  redis:
+    container_name: redis
+    image: redis:7.2.5
+    ports:
+      - "6379:6379"
+    networks:
+      - dev
+
+  #PostgreSQL
+  postgres:
+    container_name: postgres
+    image: postgres:17.2
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: nigPostgres_Pas5432
+      POSTGRES_DB: fintech_test_task_db
+    ports:
+      - '5432:5432'
+    networks:
+      - dev
+    volumes:
+      - postgres_data:/var/lib/postgresql@17/data
+
+volumes:
+  postgres_data:
+    driver: local

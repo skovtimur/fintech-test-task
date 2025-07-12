@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ciUprQ2D1t8=",
+  "success": true,
+  "projectFilePath": "/home/timur/Desktop/repositories/FintechTestTask/FintechTestTask.Domain/FintechTestTask.Domain.csproj",
+  "expectedPackageFiles": [
+    "/home/timur/.nuget/packages/fluentvalidation/12.0.0/fluentvalidation.12.0.0.nupkg.sha512",
+    "/home/timur/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.3/microsoft.aspnetcore.app.ref.9.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

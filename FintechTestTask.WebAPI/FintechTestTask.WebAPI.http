@@ -1,0 +1,6 @@
+@FintechTestTask.WebAPI_HostAddress = http://localhost:5014
+
+GET {{FintechTestTask.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
